@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+# 🛍️ E-commerce Chatbot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully functional AI-powered chatbot interface that assists users in browsing products from a mock e-commerce platform. Built with a React frontend and a Flask backend, this chatbot supports product search, real-time filtering, session management, and interactive UI.
 
-## Available Scripts
+## 🔗 Live Demo
 
-In the project directory, you can run:
+- 🔹 **Frontend:** [https://ecommerce-chatbot-gilt.vercel.app/login](https://ecommerce-chatbot-gilt.vercel.app/login)
+- 🔹 **Backend API:** [https://ecommerce-chatbot-backend-jn1d.onrender.com](https://ecommerce-chatbot-backend-jn1d.onrender.com)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 💬 Conversational UI for product search and exploration  
+- 🧠 Intelligent backend processing with Flask  
+- 📦 Mock inventory with 20 product entries  
+- ♻️ Reset and clear conversation options  
+- 🌐 Responsive UI (desktop, tablet, and mobile)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Project Structure
 
-### `npm run build`
+```
+chatbot-backend/
+├── app.py                 # Main Flask application
+├── db_setup.py           # Script to populate mock product data
+├── products.db           # SQLite database
+├── requirements.txt      # Python dependencies
+├── chatbot-frontend/
+│   └── frontend/         # React app (contains all frontend source code)
+│       ├── public/
+│       ├── src/
+│       ├── package.json
+│       └── ...
+└── README.md
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔧 Prerequisites
 
-### `npm run eject`
+- Node.js (v18 or higher)
+- Python (3.8+)
+- Git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🧪 Backend Setup (Flask)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/saikolupoti/ecomnerce-chatbot-backend.git
+   cd ecomnerce-chatbot-backend
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Create a virtual environment**  
+   ```bash
+   python -m venv venv
+   source venv/bin/activate    # For Linux/macOS
+   venv\Scripts\activate       # For Windows
+   ```
 
-## Learn More
+3. **Install dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Run the backend server**  
+   ```bash
+   python app.py
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 💻 Frontend Setup (React)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Navigate to frontend**  
+   ```bash
+   cd chatbot-frontend/frontend
+   ```
 
-### Analyzing the Bundle Size
+2. **Install dependencies**  
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Run development server**  
+   ```bash
+   npm start
+   ```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧠 Technologies Used
 
-### Advanced Configuration
+### Frontend:
+- React.js
+- HTML5, CSS3
+- Vercel for deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Backend:
+- Flask (Python)
+- SQLite3
+- REST API
+- Render for deployment
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🗃️ Sample Use Cases
 
-### `npm run build` fails to minify
+- **"Show me phones"**  
+- **"Find me some headphones"**  
+- **"Display watches"**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📌 Future Enhancements
+
+- 🧾 Integration with real-time product APIs  
+- 🔐 OAuth or Firebase authentication
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - feel free to use and customize it for personal or academic use.
+
+---
+
+## 🙋‍♂️ Author
+
+**Kolupoti Sai Prakash**  
+📫 [GitHub Profile](https://github.com/saikolupoti)  
+📍 India
+
+---
+
+> Thank you for visiting! If you liked the project, consider giving it a ⭐️ on GitHub.
